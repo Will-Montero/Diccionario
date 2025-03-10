@@ -123,7 +123,7 @@ const PalabraResultado: React.FC<PalabraResultadoProps> = ({
                         theme === "dark" ? styles["span-example-dark"] : styles['span-example']
                       }
                     >
-                     "{def.example}"
+                     {def.example}
                     </span>
                   </main>
                 )}
