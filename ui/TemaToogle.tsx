@@ -1,14 +1,12 @@
 import React from 'react';
 import { FaSun, FaMoon } from 'react-icons/fa';
-import { useTheme } from '../context/TemaContext';
 
 interface ThemeSwitchProps {
-  theme: string;
+  theme: 'light' | 'dark';
   toggleTheme: () => void;
 }
 
-const ThemeSwitch: React.FC<ThemeSwitchProps> = () => {
-  const { theme, toggleTheme } = useTheme();
+const ThemeSwitch: React.FC<ThemeSwitchProps> = ({ theme, toggleTheme }) => {
   return (
     <div className="flex items-center relative">
       <div
@@ -31,4 +29,3 @@ const ThemeSwitch: React.FC<ThemeSwitchProps> = () => {
 };
 
 export default ThemeSwitch;
-
