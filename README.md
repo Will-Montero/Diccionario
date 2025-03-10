@@ -26,4 +26,4 @@ Esta es una aplicación de diccionario construida con Next.js, Tailwind y TypeSc
 
 2. **App Vercel**
 
-
+    https://diccionario-x8g4.vercel.app/
