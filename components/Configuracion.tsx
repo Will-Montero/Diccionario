@@ -1,21 +1,21 @@
 import React from 'react';
 import LibroIcono from '@/ui/LibroIcono';  // Importa un componente de icono personalizado
-import TemaToggle from '@/ui/TemaToogle';
+import TemaToggle from '@/ui/TemaToggle';  // Importa el componente de alternancia de tema
 
 // Define las propiedades que el componente Configuracion espera recibir
 interface ConfiguracionProps {
   font: string;  // Fuente actual seleccionada
   setFont: (font: string) => void;  // Función para cambiar la fuente
+  theme: string;  // Tema actual seleccionado
+  setTheme: (theme: string) => void;  // Función para cambiar el tema
 }
-interface ConfiguracionProps {
-  font: string;
-  setFont: (font: string) => void;
-  theme: string;  // Añade la propiedad theme
-  setTheme: (theme: string) => void;  // Añade la propiedad setTheme
-}
-// Componente funcional que permite configurar la fuente y el tema de la aplicación
-const Configuracion: React.FC<ConfiguracionProps> = ({ font, setFont }) => {
 
+// Componente funcional que permite configurar la fuente y el tema de la aplicación
+const Configuracion: React.FC<ConfiguracionProps> = ({ font, setFont, theme, setTheme }) => {
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
 
   return (
     <div className="mt-2 mb-8 flex justify-between">  {/* Contenedor principal con espaciado vertical y alineación de elementos */}
@@ -33,9 +33,9 @@ const Configuracion: React.FC<ConfiguracionProps> = ({ font, setFont }) => {
           </select>
         </label>
         <span>|</span>  {/* Separador visual entre los selectores */}
-       <label className='pl-3'>
-       <TemaToggle/>
-       </label>
+        <label className='pl-3'>
+          <TemaToggle theme={theme} toggleTheme={toggleTheme} />
+        </label>
       </main>
     </div>
   );
