@@ -102,7 +102,7 @@ const PalabraResultado: React.FC<PalabraResultadoProps> = ({
               <div key={defIndex} className="mb-1">
                 <main className="flex pl-3">
                   <span>
-                    •<i className="fas fa-circle"></i>
+                    •
                   </span>
                     {/* Muestra la definición */}
                   <h6 className={theme === "dark" ? styles["h6-dark"] : styles.h6}>{def.definition}</h6>
