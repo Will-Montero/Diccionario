@@ -11,9 +11,10 @@ interface CustomError extends Error { // Define una interfaz para un error perso
 
 interface HomeProps { // Define una interfaz para las props del componente Home
   font: string; // Propiedad font de tipo string
-  setFont: (font: string) => void; // Propiedad setFont de tipo función que toma un string y no retorna nada
-  theme: string; // Propiedad theme de tipo string
-  setTheme: (theme: string) => void; // Propiedad setTheme de tipo función que toma un string y no retorna nada
+
+    setFont: (font: string) => void;  // Función para cambiar la fuente
+    theme: 'light' | 'dark';  // Tema actual seleccionado, puede ser 'light' o 'dark'
+    setTheme: React.Dispatch<React.SetStateAction<'light' | 'dark'>>;  // Función para cambiar el tema
 }
 
 const Home: React.FC<HomeProps> = ({ font, setFont, theme, setTheme }) => { // Define el componente funcional Home que recibe las props definidas en HomeProps
