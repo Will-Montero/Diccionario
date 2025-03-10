@@ -31,8 +31,6 @@ const Buscador: React.FC<BuscadorProps> = ({ onSearch }) => {
     // Transforma la entrada a minúsculas
     const lowerCaseQuery = trimmedQuery.toLowerCase();
 
-    console.log('Buscando:', lowerCaseQuery);  // Depuración: muestra la consulta en la consola
-
     setError(null);  // Limpia el mensaje de error
     onSearch(lowerCaseQuery);  // Llama a la función de búsqueda pasada como prop
   };

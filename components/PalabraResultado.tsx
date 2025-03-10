@@ -48,9 +48,7 @@ const PalabraResultado: React.FC<PalabraResultadoProps> = ({
   // Función para reproducir el audio
   const playAudio = () => {
     if (audioRef.current) {
-      audioRef.current.play().catch((error) => {
-        console.error("Error al reproducir el audio:", error);
-      });
+      audioRef.current.play()
     }
   };
 
