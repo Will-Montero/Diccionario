@@ -1,0 +1,103 @@
+/*estilos  de claro a oscuro*/
+
+.h5 {
+    color: rgb(70, 70, 71);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.h5-dark {
+    color: rgb(178, 178, 179);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.h3 {
+    color: rgb(78, 78, 79);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.h3-dark {
+    color: rgb(178, 178, 179);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.h6 {
+    color: rgb(54, 54, 55);
+    padding-left: 1rem;
+}
+
+.h6-dark {
+    color: rgb(178, 178, 179);
+    padding-left: 1rem;
+}
+
+.p {
+    color: rgb(76, 76, 77);
+    padding-right: 1rem;
+}
+
+.p-dark {
+    color: rgb(178, 178, 179);
+    padding-right: 1rem;
+}
+.span {
+ color: blueviolet;
+ font-size: 1rem;
+ font-weight: 600;
+}
+.span-dark {
+    font-size: 1rem;
+    font-weight: 600;
+    color: blueviolet;
+
+}
+.span-example {
+    font-size: 1rem;
+    font-weight: 100;
+    color: rgb(118, 118, 119);
+    padding-left: 1rem;
+   }
+   .span-example-dark {
+       font-size: 1rem;
+       font-weight: 100;
+       color: rgb(178, 178, 179);
+       padding-left: 1rem;
+   }
+@media (max-width: 450px) {
+    .h5, .h5-dark {
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+
+    .h3, .h3-dark {
+        font-size: 2rem;
+    }
+
+    .h6, .h6-dark{
+        font-size: 1.2rem;
+        padding-left: 1rem
+    }
+
+    .p, .p-dark {
+        font-size: 1.2rem;
+        padding-left: 1rem;
+    }
+    .span .span-dark {
+        font-size: 2rem;
+    }
+    .span-example .span-example-dark {
+        font-size: 2rem;
+        font-weight: 100;
+    }
+}

@@ -1,0 +1,15 @@
+/* Estilos para el formulario en modo claro */
+.form {
+    background-color: rgba(216, 216, 216, 0.883);
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+  }
+  
+  /* Estilos para el formulario en modo oscuro */
+  .form-dark {
+    background-color: rgba(52, 52, 52, 0.883);
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    color: aliceblue;
+  }
+  

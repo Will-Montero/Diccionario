@@ -1,40 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Getting Started
+# Aplicación de Diccionario
 
-First, run the development server:
+Esta es una aplicación de diccionario construida con Next.js, Tailwind y TypeScript. Permite  buscar definiciones de palabras y gestionar el historial de búsquedas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Características
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Búsqueda de palabras utilizando una API de diccionario. API: https://dictionaryapi.dev/
+- Historial de búsquedas con fecha y hora.
+- Cambio de fuente dinámico.
+- Tema claro y oscuro.
+- Footer con enlace a LinkedIn del desarrollador.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Requisitos Previos
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Node.js y npm instalados.
+- Un navegador web moderno para probar la aplicación.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Instalación
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clonar el Repositorio**
 
-## Learn More
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+   cd tu-repositorio
+# Aplicación de Diccionario
 
-To learn more about Next.js, take a look at the following resources:
+Esta es una aplicación de diccionario construida con Next.js, TypeScript, y Redux Toolkit. Permite a los usuarios buscar definiciones de palabras y gestionar el historial de búsquedas.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## Características
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Búsqueda de palabras utilizando una API de diccionario.
+- Historial de búsquedas con fecha y hora.
+- Cambio de fuente dinámico.
+- Tema claro y oscuro.
+- Footer fijo con enlace a LinkedIn del desarrollador.
 
-## Deploy on Vercel
+## Requisitos Previos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Node.js y npm instalados.
+- Un navegador web moderno para probar la aplicación.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## Instalación
+
+1. **Clonar el Repositorio**
+
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+   cd tu-repositorio
