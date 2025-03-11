@@ -1,7 +1,7 @@
 /*estilos  de claro a oscuro*/
 
 .h5 {
-    color: rgb(70, 70, 71);
+    color: rgb(104, 104, 104);
     padding-top: 1rem;
     padding-bottom: 2rem;
     font-weight: 200;
@@ -9,7 +9,7 @@
 }
 
 .h5-dark {
-    color: rgb(200, 200, 206);
+    color: rgb(178, 178, 178);
     padding-top: 1rem;
     padding-bottom: 2rem;
     font-weight: 200;
@@ -32,13 +32,13 @@
     font-size: 2rem;
 }
 
-.h6 {
-    color: rgb(79, 79, 79);
+.definicion {
+    color: rgb(115, 114, 114);
     padding-left: 1rem;
 }
 
-.h6-dark {
-    color: rgb(210, 206, 206);
+.definicion-dark {
+    color: rgb(199, 194, 194) !important;
     padding-left: 1rem;
 }
 
@@ -84,7 +84,7 @@
         font-size: 2rem;
     }
 
-    .h6, .h6-dark{
+    .definicion, .definicion-dark{
         font-size: 1.2rem;
         padding-left: 1rem
     }

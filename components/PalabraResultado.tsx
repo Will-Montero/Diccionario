@@ -1,6 +1,4 @@
 import PlayIcono from "@/ui/PlayIcono";
-import styles from "../styles/palabraResultado.module.css";
-import { useTheme } from "@/context/TemaContext";
 import React from "react";
 // Define la estructura de una definición
 interface Definition {
@@ -52,15 +50,13 @@ const PalabraResultado: React.FC<PalabraResultadoProps> = ({
     }
   };
 
-  const { theme } = useTheme(); // Obtiene el tema actual del contexto
-
   return (
     <div className="p-1">
       <section className="flex justify-between items-center">
 
         <main>
            {/* Muestra la palabra buscada */}
-          <h2 className="text-5xl pb-2 font-bold">{word}</h2>
+          <h2 className="text-5xl pb-2 font-bold text-gray-500">{word}</h2>
 
 
 
@@ -88,38 +84,36 @@ const PalabraResultado: React.FC<PalabraResultadoProps> = ({
         {meanings.map((meaning, index) => (
           <div key={index} className="mb-1">
             <main className="flex">
-              <h3 className={theme === "dark" ? styles["h3-dark"] : styles.h3}>
+              <h3 className="text-2xl pt-2 pb-5">
                 {meaning.partOfSpeech}{" "}
               </h3>
               <hr />
             </main>
-            <h5 className={theme === "dark" ? styles["h5-dark"] : styles.h5}>
+            <h5 className="pb-10 text-gray-500">
               Meaning
             </h5>
 
             {/** Mapea las definiciones dentro de cada significado */}
             {meaning.definitions.map((def, defIndex) => (
-              <div key={defIndex} className="mb-1">
-                <main className="flex pl-3">
+              <div key={defIndex} className="mb-5 mt-5">
+                <main className="flex pl-3 ">
                   <span>
                     •
                   </span>
                     {/* Muestra la definición */}
-                  <h6 className={theme === "dark" ? styles["h6-dark"] : styles.h6}>{def.definition}</h6>
+                  <h6 className="pl-2 text-gray-700">{def.definition}</h6>
                 </main>
 
                 {/*muestra el ejemplo*/}
                 {def.example && (
-                  <main className="flex mt-3 mb-3">
+                  <main className="flex mt-3 mb-3 ml-4">
                     <p
-                      className={theme === "dark" ? styles["p-dark"] : styles.p}
+                      className=""
                     >
                     
                     </p>
                     <span
-                      className={
-                        theme === "dark" ? styles["span-example-dark"] : styles['span-example']
-                      }
+                      className="text-gray-500"
                     >
                      {def.example}
                     </span>
@@ -131,14 +125,12 @@ const PalabraResultado: React.FC<PalabraResultadoProps> = ({
                 {def.synonyms.length > 0 && (
                   <main className="flex mt-3 mb-3">
                     <p
-                      className={theme === "dark" ? styles["p-dark"] : styles.p}
+                      className="text-gray-600"
                     >
                      Synonyms
                     </p>
                     <span
-                      className={
-                        theme === "dark" ? styles["span-dark"] : styles.span
-                      }
+                      className="pl-3"
                     >
                       {def.synonyms.join(", ")}
                     </span>
@@ -150,14 +142,12 @@ const PalabraResultado: React.FC<PalabraResultadoProps> = ({
                 {def.antonyms.length > 0 && (
                   <main className="flex mt-3 mb-3">
                     <p
-                      className={theme === "dark" ? styles["p-dark"] : styles.p}
+                      className=""
                     >
                       Antonym
                     </p>
                     <span
-                      className={
-                        theme === "dark" ? styles["span-dark"] : styles.span
-                      }
+                      className="pl-3"
                     >
                       {def.antonyms.join(", ")}
                     </span>
@@ -171,13 +161,11 @@ const PalabraResultado: React.FC<PalabraResultadoProps> = ({
             {/* Muestra los sinónimos del significado */}
             {meaning.synonyms && meaning.synonyms.length > 0 && (
               <main className="flex mt-10">
-                <p className={theme === "dark" ? styles["p-dark"] : styles.p}>
+                <p className="text-gray-600">
                 Synonyms
                 </p>
                 <span
-                  className={
-                    theme === "dark" ? styles["span-dark"] : styles.span
-                  }
+                 className="pl-3 text-gray-500"
                 >
                   {meaning.synonyms.join(", ")}
                 </span>
@@ -189,13 +177,11 @@ const PalabraResultado: React.FC<PalabraResultadoProps> = ({
              {/* Muestra los antónimos del significado */}
             {meaning.antonyms && meaning.antonyms.length > 0 && (
               <main className="flex">
-                <p className={theme === "dark" ? styles["p-dark"] : styles.p}>
+                <p className="text-gray-600">
                   Antonym
                 </p>
                 <span
-                  className={
-                    theme === "dark" ? styles["span-dark"] : styles.span
-                  }
+                  className="text-gray-700"
                 >
                   {meaning.antonyms.join(", ")}
                 </span>

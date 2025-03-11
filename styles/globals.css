@@ -1,12 +1,11 @@
 @import "tailwindcss";
 
-
 /* Estilos personalizados para el tema oscuro */
 .dark {
-    @apply bg-black text-white;
-  }
- 
-  /* Estilos personalizados para el tema claro */
+  @apply bg-black text-white;
+}
+
+/* Estilos personalizados para el tema claro */
 .body {
-    @apply bg-white text-black;
-  }
+  @apply bg-white text-black;
+}
