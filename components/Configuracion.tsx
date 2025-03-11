@@ -1,3 +1,4 @@
+"use-client"
 import React from 'react';
 import LibroIcono from '@/ui/LibroIcono';  // Importa un componente de icono personalizado
 import TemaToggle from '../ui/TemaToogle';  // Importa el componente de alternancia de tema

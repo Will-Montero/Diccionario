@@ -7,7 +7,7 @@ module.exports = {
     theme: {
       extend: {
     },
-    darkMode: 'class', // Habilita el modo oscuro usando una clase
+    darkMode: 'media', // Habilita el modo oscuro usando una clase
     plugins: [],
   }
 }

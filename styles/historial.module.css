@@ -1,5 +1,5 @@
 .span {
     display: inline-block; /* Cambia a inline-block para aceptar width */
     width: 7rem;
-    
+    color: gray;
 }

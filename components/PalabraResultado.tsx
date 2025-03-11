@@ -56,7 +56,7 @@ const PalabraResultado: React.FC<PalabraResultadoProps> = ({
 
         <main>
            {/* Muestra la palabra buscada */}
-          <h2 className="text-5xl pb-2 font-bold text-gray-500">{word}</h2>
+          <h2 className="text-5xl pb-2 font-bold">{word}</h2>
 
 
 
@@ -97,7 +97,7 @@ const PalabraResultado: React.FC<PalabraResultadoProps> = ({
             {meaning.definitions.map((def, defIndex) => (
               <div key={defIndex} className="mb-5 mt-5">
                 <main className="flex pl-3 ">
-                  <span>
+                  <span className="text-gray-600">
                     •
                   </span>
                     {/* Muestra la definición */}
@@ -130,7 +130,7 @@ const PalabraResultado: React.FC<PalabraResultadoProps> = ({
                      Synonyms
                     </p>
                     <span
-                      className="pl-3"
+                      className="pl-3 text-gray-500"
                     >
                       {def.synonyms.join(", ")}
                     </span>
